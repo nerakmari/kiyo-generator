@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Which Kiyo Are You Today?</title>
+  <!--script attributes to the front-ender on youtube-->
+  <script>
+    const change = () =>{
+      x = Math.floor((Math.random()*11)+1)
+      console.log(x);
+      document.getElementById('img').innerHTML = `<img src='./assets/kiyo${x}.jpg'>`
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div class="generator">
+  <h1>Which Kiyo Are You Today?</h1>
+    <button id="btn" onclick="change()">Generate</button> 
+    <div class="img" id="img">
+  </div>
+  </div>
+</body>
+</html>
